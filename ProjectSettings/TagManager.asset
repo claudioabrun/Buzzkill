@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Invisible Wall
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Game
     uniqueID: 3067404421
+    locked: 0
+  - name: Invisible Wall
+    uniqueID: 3999096037
     locked: 0

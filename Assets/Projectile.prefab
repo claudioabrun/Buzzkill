@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6774341464011868663}
   - component: {fileID: 1702991790140557349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 684066605020078985}
   - component: {fileID: 8956698446449645348}
   - component: {fileID: 3980730824861559133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Projectile
-  m_TagString: Player
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054f98751f2ea3648bb66eebbfe6cd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 30

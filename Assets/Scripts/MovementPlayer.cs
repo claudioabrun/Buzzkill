@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementPlayer : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5;
     float speedX, speedY;
     Rigidbody2D rb;
 
@@ -18,8 +18,8 @@ public class MovementPlayer : MonoBehaviour
 
     void Update()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * speed;
-        speedY = Input.GetAxisRaw("Vertical") * speed;
+        speedX = speed;
+        speedY = Input.GetAxisRaw("Vertical") * (speed + 5);
         rb.velocity = new Vector2(speedX, speedY);
 
         if (Input.GetButtonDown("Fire1"))

@@ -22,7 +22,7 @@ public class MovementPlayer : MonoBehaviour
         speedY = Input.GetAxisRaw("Vertical") * (speed + 5);
         rb.velocity = new Vector2(speedX, speedY);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             Instantiate(projectilePrefab, LaunchOffset.position, transform.rotation);
         }

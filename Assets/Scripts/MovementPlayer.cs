@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -14,8 +15,6 @@ public class MovementPlayer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
-
     void Update()
     {
         speedX = speed;
@@ -33,5 +32,13 @@ public class MovementPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void OnDestroy()
+    {
+        RestartCurrentScene();
+    }
+    public void RestartCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

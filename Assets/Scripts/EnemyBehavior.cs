@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public GameObject eBullet;
-    public Transform bulletPos;
+    public GameObject projectilePrefab;
+    public Transform LaunchOffset;
 
     private float timer;
 
@@ -16,13 +16,13 @@ public class EnemyBehavior : MonoBehaviour
         if (timer > 2)
         {
             timer = 0;
-            shoot();
+            Shoot();
         }
     }
 
-    void shoot()
+    void Shoot()
     {
-        Instantiate(eBullet, bulletPos.position, Quaternion.identity);
+        Instantiate(projectilePrefab, LaunchOffset.position, transform.rotation);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

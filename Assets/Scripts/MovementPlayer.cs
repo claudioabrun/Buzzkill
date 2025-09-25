@@ -25,6 +25,12 @@ public class MovementPlayer : MonoBehaviour
         {
             Instantiate(projectilePrefab, LaunchOffset.position, transform.rotation);
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartCurrentScene();
+        }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
